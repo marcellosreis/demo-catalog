@@ -3,7 +3,7 @@ kind: API
 metadata:
   name: api-demo-okteto
   title: api-demo-okteto
-  publishedAt: "2023-07-21 17:41:52"
+  publishedAt: "2023-07-21 18:10:39"
   description: This is an demo app for Okteto Journey
   tags:
     - api
@@ -19,6 +19,8 @@ spec:
         title: veecode-platform
         description: This is an demo app for Okteto Journey
         version: 1.0.0
+    servers:
+        - url: https://api-demo-okteto-marcellosreis.cloud.okteto.net
     paths:
         /:
             get:
