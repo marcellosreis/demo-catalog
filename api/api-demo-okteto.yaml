@@ -1,0 +1,52 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: api-demo-okteto
+  title: api-demo-okteto
+  publishedAt: "2023-07-31 23:50:34"
+  description: This is an demo app for Okteto Journey
+  tags:
+    - api
+    - demo
+    - okteto
+spec:
+  type: openapi
+  lifecycle: production
+  owner: consumer
+  definition: |-
+    openapi: 3.0.0
+    info:
+        title: veecode-platform
+        description: This is an demo app for Okteto Journey
+        version: 1.0.0
+    paths:
+        /:
+            get:
+                description: ''
+                responses:
+                    '200':
+                        description: OK
+        /echo/{echo}:
+            get:
+                description: ''
+                parameters:
+                    - name: echo
+                      in: path
+                      required: true
+                      schema:
+                        type: string
+                responses:
+                    '200':
+                        description: OK
+        /{echo}:
+            get:
+                description: ''
+                parameters:
+                    - name: echo
+                      in: path
+                      required: true
+                      schema:
+                        type: string
+                responses:
+                    '200':
+                        description: OK
