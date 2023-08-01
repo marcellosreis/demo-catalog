@@ -3,7 +3,7 @@ kind: API
 metadata:
   name: api-demo-okteto
   title: api-demo-okteto
-  publishedAt: "2023-08-01 14:47:17"
+  publishedAt: "2023-08-01 15:55:12"
   description: api-demo-okteto
   tags:
     - api
